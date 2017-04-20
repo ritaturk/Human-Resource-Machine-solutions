@@ -1,0 +1,22 @@
+a
+inbox
+jump in negative to b
+inbox
+jump if negative to c
+copyfrom 4
+outbox
+jump to a
+b
+inbox
+jump if negative to d
+copyfrom 5
+outbox
+jump to a
+c
+copyfrom 5
+outbox
+jump to a
+d
+copyfrom 4
+outbox
+jump to a
