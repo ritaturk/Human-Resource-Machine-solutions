@@ -1,0 +1,8 @@
+a
+b
+inbox
+jump if 0 to c
+jump to b
+c
+outbox
+jump to a
