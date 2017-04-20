@@ -1,0 +1,11 @@
+a
+inbox
+copyto 24
+copyfrom [24]
+outbox
+b
+bump up 24
+copyfrom [24]
+jump if 0 to a
+outbox
+jump to b
