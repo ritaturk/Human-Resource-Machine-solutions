@@ -1,0 +1,47 @@
+copyfrom 23
+copyto 22
+copyto 21
+a
+inbox
+copyto [22]
+jump if 0 to b
+bump up 22
+jump to a
+b
+copyfrom 24
+copyto 22
+c
+inbox
+copyto [22]
+jump if 0 to d
+bump up 22
+jump to c
+d
+copyfrom 24
+copyto 22
+e
+copyfrom [21]
+jump if 0 to f
+copyfrom [22]
+jump if 0 to g
+sub [21]
+jump if 0 to h
+jump if negative to g
+jump to i
+h
+bump up 21
+bump up 22
+jump to d
+f
+copyfrom [23]
+jump if 0 to i
+outbox
+bump up 23
+jump to f
+g
+jump to h
+copyfrom [24]
+jump if 0 to i
+outbox
+bump up 24
+jump to h
