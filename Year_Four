@@ -1,0 +1,10 @@
+a
+inbox
+copyto 1
+inbox
+copyto 0
+copyfrom 0
+outbox
+copyfrom 1
+outbox
+jump to a
