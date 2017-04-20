@@ -1,0 +1,32 @@
+a
+inbox
+copyto 8
+copyfrom 9
+copyto 7
+bump up 7
+copyto 0
+copyto 1
+copyfrom 0
+outbox
+copyfrom 1
+outbox
+b
+copyfrom 0
+add 1
+copyto 0
+copyfrom 8
+sub 0
+jump if negative to c
+copyfrom 0
+outbox
+copyfrom 0
+add 1
+copyto 1
+copyfrom 8
+sub 1
+jump if negative to c
+copyfrom 1
+outbox
+jump to b
+c
+jump to a
