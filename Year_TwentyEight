@@ -1,0 +1,76 @@
+a
+inbox
+copy to 0
+inbox
+copy to 1
+inbox 
+copy to 2
+sub 0
+jump if 0 to b
+jump if negative to b
+copyfrom 0
+copyfrom 1
+sub 0
+jump if 0 to c
+jump if negative to c
+copyfrom 1
+copyfrom 2
+sub 1
+jump if 0 to d
+jump if negative to d
+copyfrom 0
+outbox
+copyfrom 1
+outbox
+copyfrom 2
+outbox
+jump to a
+b
+copyfrom 1
+sub 0
+jump if 0 to e
+jump if negative to e
+copyfrom 2
+outbox
+copyfrom 0
+outbox
+copyfrom 1
+outbox
+jump to a
+d
+copyfrom 0
+outbox
+copyfrom 2
+outbox
+copyfrom 1
+outbox
+jump to a
+c
+copyfrom 1
+outbox
+copyfrom 0
+outbox
+copyfrom 2
+outbox
+jump to a
+e
+copyfrom 2
+copyfrom 1
+sub 2
+jump if negative to f
+jump if 0 to f
+copyfrom 2
+outbox
+copyfrom 1
+outbox
+copyfrom 0
+outbox
+jump to a
+f
+copyfrom 1
+outbox
+copyfrom 2
+outbox
+copyfrom 0
+outbox
+jump to a
