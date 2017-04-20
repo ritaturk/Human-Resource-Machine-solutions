@@ -1,0 +1,22 @@
+a
+inbox
+copyto 0
+copyto 1
+inbox
+copyto 2
+jump if zero to b
+d
+bump down 2
+jump if 0 to c
+copyfrom 1
+jump if 0 to b
+add 0
+copyto 1
+jump to d
+c
+copyfrom 1
+outbox
+jump to a
+b
+outbox
+jump to a
