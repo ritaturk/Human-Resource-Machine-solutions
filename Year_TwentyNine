@@ -1,0 +1,6 @@
+a
+inbox
+copyto 12
+copyfrom [12]
+outbox
+jump to a
