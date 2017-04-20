@@ -1,0 +1,25 @@
+a
+copyfrom 14
+copy to 13
+inbox
+b
+sub 15
+jump if 0 to d
+jump if negative to c
+copy to 11
+bump up 13
+copyfrom 11
+jump to b
+c
+add 15
+outbox
+jump to e
+d
+copyto 11
+bump up 13
+copyfrom 11
+outbox
+e
+copyfrom 13
+outbox
+jump to a
