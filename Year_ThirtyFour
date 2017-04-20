@@ -1,0 +1,18 @@
+a
+inbox
+copyto 7
+copyfrom 5
+copyto 6
+b
+copyfrom [6]
+jump if 0 to c
+copyfrom 7
+sub [6]
+jump if 0 to d
+bump up 6
+jump to b
+d
+copyfrom 7
+outbox
+c
+jump to a
