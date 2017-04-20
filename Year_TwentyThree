@@ -1,0 +1,17 @@
+a
+inbox
+b
+copy to 0
+c
+inbox
+jump if 0 to d
+sub 0
+jump if negative to e
+jump to c
+e
+add 0
+jump to b
+d
+copyfrom 0
+outbox
+jumpto a
