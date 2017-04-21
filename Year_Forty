@@ -1,0 +1,43 @@
+copyfrom 24
+copyto 19
+bump up 19
+bump up 19
+add 19
+copyto 18
+a
+copyfrom 19
+copyto 23
+inbox
+copyto 0
+b
+copyfrom 24
+copyto 20
+copyfrom 0
+c
+sub 23
+jump if 0 to d
+jump if negative to e
+copyto 21
+bump up 20
+copyfrom 21
+jump to c
+d
+copyfrom 23
+outbox
+bump up 20
+sub 19
+jump if negative to a
+add 19
+copyto 0
+jump to f
+e
+bump 23
+f
+copyfrom 18
+sub 23
+jump if 0 to g
+jump to b
+g
+copyfrom 0
+outbox
+jump to a
