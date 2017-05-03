@@ -1,25 +1,29 @@
-a
-copyfrom 14
-copy to 13
-inbox
-b
-sub 15
-jump if 0 to d
-jump if negative to c
-copy to 11
-bump up 13
-copyfrom 11
-jump to b
-c
-add 15
-outbox
-jump to e
-d
-copyto 11
-bump up 13
-copyfrom 11
-outbox
-e
-copyfrom 13
-outbox
-jump to a
+
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 39-Re-Coordinator - SIZE 20/14 - SPEED 85/76 --
+
+a:
+	copyfrom 	14
+	copyto 		13
+	inbox
+b:
+	sub 		15
+	jumpz 		d
+	jumpn 		c
+	copyto 		11
+	bumpup 		13
+	copyfrom 	11
+	jump 		b
+c:
+	add 		15
+	outbox
+	jump 		e
+d:
+	copyto 		11
+	bumpup 		13
+	copyfrom 	11
+	outbox
+e:
+	copyfrom 	13
+	outbox
+	jump 		a

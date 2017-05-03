@@ -1,8 +1,15 @@
-a
-inbox
-copyto 0
-inbox
-copyto 1
-add 0
-outbox
-jump to a
+
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 06-Rainy-Summer - SIZE 7/6 - SPEED 28/24 --
+
+-- The add command is introduced and used to add an item from memory to the item
+-- in hand.
+
+a:
+	inbox
+	copyto 0
+	inbox
+	copyto 1
+	add 0
+	outbox
+	jump to	a

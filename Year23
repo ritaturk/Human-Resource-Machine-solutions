@@ -1,17 +1,21 @@
-a
-inbox
-b
-copy to 0
-c
-inbox
-jump if 0 to d
-sub 0
-jump if negative to e
-jump to c
-e
-add 0
-jump to b
-d
-copyfrom 0
-outbox
-jumpto a
+
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 23-The-Littlest-Number - SIZE 12/13 - SPEED 75/75 --
+
+a:
+	inbox
+b:
+	copyto 		0
+c:
+	inbox
+	jumpz 		d
+	sub 		0
+	jumpn 		e
+	jump 		c
+e:
+	add 		0
+	jump 		b
+d:
+	copyfrom 	0
+	outbox
+	jump 		a

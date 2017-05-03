@@ -1,32 +1,39 @@
-a
-inbox
-copyto 8
-copyfrom 9
-copyto 7
-bump up 7
-copyto 0
-copyto 1
-copyfrom 0
-outbox
-copyfrom 1
-outbox
-b
-copyfrom 0
-add 1
-copyto 0
-copyfrom 8
-sub 0
-jump if negative to c
-copyfrom 0
-outbox
-copyfrom 0
-add 1
-copyto 1
-copyfrom 8
-sub 1
-jump if negative to c
-copyfrom 1
-outbox
-jump to b
-c
-jump to a
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 22-Fibonacci-Visitor - SIZE 29/19 - SPEED 109/156 --
+
+-- This solution is level-specific (patterned and quantity-limited input).
+-- This solution assumes that there are 2 inputs and
+--   both of them are between [5, 35).
+
+a:
+	inbox
+	copyto 		8
+	copyfrom 	9
+	copyto 		7
+	bumpup 		7
+	copyto 		0
+	copyto 		1
+	copyfrom 	0
+	outbox
+	copyfrom 	1
+	outbox
+b:
+	copyfrom 	0
+	add 		1
+	copyto 		0
+	copyfrom 	8
+	sub 		0
+	jumpn		c
+	copyfrom 	0
+	outbox
+	copyfrom 	0
+	add 		1
+	copyto 		1
+	copyfrom 	8
+	sub 		1
+	jumpn 		c
+	copyfrom 	1
+	outbox
+	jump 		b
+c:
+	jump 		a

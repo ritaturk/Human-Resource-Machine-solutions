@@ -1,15 +1,20 @@
-a
-inbox
-copyto 0
-inbox
-copyto 1
-sub 0
-jump if negative to c
-copyfrom 1
-outbox
-jump to a
-c
-copyfrom 0
-outbox
-jump to a
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 14-Maximization-Room - SIZE 12/10 - SPEED 36/34 --
+
+-- This solution is level-specific (quantity-limited input).
+
+a:
+	inbox
+	copyto 		0
+	inbox
+	copyto 		1
+	sub 		0
+	jumpn 		b
+	copyfrom 	1
+	outbox
+	jump 		a
+b:
+	copyfrom 	0
+	outbox
+	jump 		a
 

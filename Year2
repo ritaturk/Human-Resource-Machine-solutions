@@ -1,4 +1,6 @@
-a
-inbox
-outbox
-jump to a
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 02-Busy-Mail-Room - SIZE 3/3 - SPEED 30/25 --
+a:
+	inbox
+	outbox
+	jump	a

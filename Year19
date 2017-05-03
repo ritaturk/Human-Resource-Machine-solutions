@@ -1,18 +1,21 @@
-a
-inbox
-copyto 0
-jump if 0 to b
-jump if negative to c
-d
-outbox
-bump down 0
-jump if 0 to b
-jump to d
-c
-outbox
-bump up 0
-jump if 0 to b
-jump to c
-b
-outbox
-jump to a 
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 19-Countdown - SIZE 14/10 - SPEED 83/82 --
+
+a:
+	inbox
+	copyto 	0
+	jumpz 	b
+	jumpn 	c
+d:
+	outbox
+	bumpdn 	0
+	jumpz 	b
+	jump 	d
+c:
+	outbox
+	bumpup 	0
+	jumpz 	b
+	jump  	c
+b:
+	outbox
+	jump 	a 

@@ -1,22 +1,25 @@
-a
-inbox
-copyto 0
-copyto 1
-inbox
-copyto 2
-jump if zero to b
-d
-bump down 2
-jump if 0 to c
-copyfrom 1
-jump if 0 to b
-add 0
-copyto 1
-jump to d
-c
-copyfrom 1
-outbox
-jump to a
-b
-outbox
-jump to a
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 20-Multiplication-Workshop - SIZE 16/15 - SPEED 128/109 --
+
+a:
+	inbox
+	copyto 		0
+	copyto 		1
+	inbox
+	copyto 		2
+	jumpz 		b
+d:
+	bumpdn 		2
+	jumpz 		c
+	copyfrom 	1
+	jumpz 		b
+	add 		0
+	copyto 		1
+	jump 		d
+c:
+	copyfrom 	1
+	outbox
+	jump 		a
+b:
+	outbox
+	jump 		a

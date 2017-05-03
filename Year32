@@ -1,21 +1,24 @@
-a
-inbox
-copyto 15
-copyfrom 14
-copyto 'index'
-copyto 'counter'
-b
-copyfrom [index]
-jump if 0 to c
-sub 15
-jump if 0 to d
-bump up index
-jump to b
-d
-bump up counter
-bump up index
-jump to b
-c
-copyfrom counter
-outbox
-jump to a
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 32-Inventory-Report - SIZE 17/16 - SPEED 390/393 --
+
+a:
+	inbox
+	copyto 		15
+	copyfrom 	14
+	copyto 		'index'
+	copyto 		'counter'
+b:
+	copyfrom 	[index]
+	jumpz 		c
+	sub 		15
+	jumpz 		d
+	bumpup 		index
+	jump 		b
+d:
+	bumpup 		counter
+	bumpup 		index
+	jump 		b
+c:
+	copyfrom 	counter
+	outbox
+	jump 		a

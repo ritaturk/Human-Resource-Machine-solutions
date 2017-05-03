@@ -1,17 +1,21 @@
-a
-inbox
-copyto 0
-inbox
-copyto 1
-copyfrom 0
-b
-sub 1
-jump if 0 to c
-jump if negative to d
-copyto 0
-jump to b
-d
-copyfrom 0
-c
-outbox
-jump to a
+
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 24-Mod-Module - SIZE 13/12 - SPEED 61/57 --
+
+a:
+	inbox
+	copyto 		0
+	inbox
+	copyto 		1
+	copyfrom 	0
+b:
+	sub 		1
+	jumpz 		c
+	jumpn 		d
+	copyto 		0
+	jump 		b
+d:
+	copyfrom 	0
+c:
+	outbox
+	jump 		a

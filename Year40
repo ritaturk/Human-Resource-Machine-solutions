@@ -1,43 +1,47 @@
-copyfrom 24
-copyto 19
-bump up 19
-bump up 19
-add 19
-copyto 18
-a
-copyfrom 19
-copyto 23
-inbox
-copyto 0
-b
-copyfrom 24
-copyto 20
-copyfrom 0
-c
-sub 23
-jump if 0 to d
-jump if negative to e
-copyto 21
-bump up 20
-copyfrom 21
-jump to c
-d
-copyfrom 23
-outbox
-bump up 20
-sub 19
-jump if negative to a
-add 19
-copyto 0
-jump to f
-e
-bump 23
-f
-copyfrom 18
-sub 23
-jump if 0 to g
-jump to b
-g
-copyfrom 0
-outbox
-jump to a
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 40-Prime-Factory - SIZE 36/28 - SPEED 287/399 --
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+	copyfrom 	24
+	copyto 		19
+	bumpup 		19
+	bumpup 		19
+	add 		19
+	copyto 		18
+a:
+	copyfrom 	19
+	copyto 		23
+	inbox
+	copyto 		0
+b:
+	copyfrom 	24
+	copyto 		20
+	copyfrom 	0
+c:
+	sub 		23
+	jumpz 		d
+	jumpn 		e
+	copyto 		21
+	bumpup 		20
+	copyfrom 	21
+	jump 		c
+d:
+	copyfrom 	23
+	outbox
+	bumpup 		20
+	sub 		19
+	jumpn 		a
+	add 		19
+	copyto 		0
+	jump 		f
+e:
+	bump 		23
+f:
+	copyfrom 	18
+	sub 		23
+	jumpz 		g
+	jump 		b
+g:
+	copyfrom 	0
+	outbox
+	jump 		a

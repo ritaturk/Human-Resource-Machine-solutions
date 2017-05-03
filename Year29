@@ -1,6 +1,9 @@
-a
-inbox
-copyto 12
-copyfrom [12]
-outbox
-jump to a
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 29-Storage-Floor - SIZE 5/5 - SPEED 25/25 --
+
+a:
+	inbox
+	copyto 		12
+	copyfrom 	[12]
+	outbox
+	jump 		a

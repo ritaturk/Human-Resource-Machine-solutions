@@ -1,15 +1,19 @@
-a
-inbox
-jump if 0 to b
-copyto [14]
-bump up 14
-jump to a
-b
-bump down 14
-jump if negative to c
-copyfrom [14]
-outbox
-jump to b
-c
-bump up 14
-jump to a
+
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 31-String-Reverse - SIZE 12/11 - SPEED 123/122 --
+
+a:
+	inbox
+	jumpz 		b
+	copyto 		[14]
+	bump up 	14
+	jump 		a
+b:
+	bumpdn 		14
+	jumpn 		c
+	copyfrom 	[14]
+	outbox
+	jump 		b
+c:
+	bump up 	14
+	jump 		a

@@ -1,8 +1,12 @@
-a
-b
-inbox
-jump if 0 to c
-jump to b
-c
-outbox
-jump to a
+
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 09-Zero-Preservation-Initiative - SIZE 5/5 - SPEED 28/25 --
+
+-- This solution is level-specific (patterned and quantity-limited input).
+a:
+	inbox
+	jumpz 	b
+	jump 	a
+c:
+	outbox
+	jump	a

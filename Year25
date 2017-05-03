@@ -1,15 +1,18 @@
-a
-inbox
-jump if 0 to b
-copyto 0
-c
-copyto 1
-bump down 0
-jump if 0 to d
-add 1
-jump to c
-d
-copyfrom 1
-b
-outbox
-jump to a
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 25-Cumulative-Countdown - SIZE 11/12 - SPEED 82/82 --
+
+a:
+	inbox
+	jumpz 		b
+	copyto 		0
+c:
+	copyto 		1
+	bumpdn 		0
+	jumpz 		d
+	add 		1
+	jump 		c
+d:
+	copyfrom 	1
+b:
+	outbox
+	jump to 	a

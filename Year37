@@ -1,10 +1,13 @@
-a
-inbox
-b
-copyto 12
-copyfrom [12]
-outbox
-bump up 12
-copyfrom [12]
-jump if negative to a
-jump to b
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 37-Scavenger-Chain - SIZE 8/8 - SPEED 63/63 --
+
+a:
+	inbox
+b:
+	copyto 		12
+	copyfrom 	[12]
+	outbox
+	bumpup 		12
+	copyfrom 	[12]
+	jumpn 		a
+	jump 		b

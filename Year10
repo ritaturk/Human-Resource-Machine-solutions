@@ -1,10 +1,15 @@
-a
-inbox
-copyto 0
-add 0
-copyto 1
-add 1
-copyto 2
-add 2
-outbox
-jump to a
+
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 10-Octoplier-Suite - SIZE 9/9 - SPEED 36/36 --
+
+-- This solution is level-specific (quantity-limited input).
+a:
+	inbox
+	copyto 	0
+	add 	0
+	copyto 	1
+	add 	1
+	copyto 	2
+	add 	2
+	outbox
+	jump	a

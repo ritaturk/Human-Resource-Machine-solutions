@@ -1,10 +1,15 @@
-a
-inbox
-copyto 1
-inbox
-copyto 0
-copyfrom 0
-outbox
-copyfrom 1
-outbox
-jump to a
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 04-Scrambler-Handler - SIZE 9/7 - SPEED 27/21 --
+
+-- This solution is level-specific (quantity-limited input).
+
+a:
+	inbox
+	copyto		1
+	inbox
+	copyto		0
+	copyfrom	0
+	outbox
+	copyfrom	1
+	outbox
+	jump to		a

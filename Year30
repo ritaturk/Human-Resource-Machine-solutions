@@ -1,11 +1,15 @@
-a
-inbox
-copyto 24
-copyfrom [24]
-outbox
-b
-bump up 24
-copyfrom [24]
-jump if 0 to a
-outbox
-jump to b
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 30-String-Storage-Floor - SIZE 9/7 - SPEED 177/203 --
+
+
+a:
+	inbox
+	copyto 		24
+	copyfrom 	[24]
+	outbox
+b:
+	bumpup 		24
+	copyfrom 	[24]
+	jumpz 		a
+	outbox
+	jump 		b

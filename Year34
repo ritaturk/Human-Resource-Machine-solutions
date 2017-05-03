@@ -1,18 +1,21 @@
-a
-inbox
-copyto 7
-copyfrom 5
-copyto 6
-b
-copyfrom [6]
-jump if 0 to c
-copyfrom 7
-sub [6]
-jump if 0 to d
-bump up 6
-jump to b
-d
-copyfrom 7
-outbox
-c
-jump to a
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 34-Vowel-Incinerator - SIZE 14/13 - SPEED 368/323 --
+
+a:
+	inbox
+	copyto 		7
+	copyfrom 	5
+	copyto 		6
+b:
+	copyfrom 	[6]
+	jumpz  		c
+	copyfrom 	7
+	sub 		[6]
+	jumpz 		d
+	bumpup 		6
+	jump 		b
+d:
+	copyfrom 	7
+	outbox
+c:
+	jump  		a

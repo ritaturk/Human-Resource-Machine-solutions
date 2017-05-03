@@ -1,13 +1,17 @@
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 13-Equalization-Room - SIZE 10/9 - SPEED 32/27 --
+
+-- This solution is level-specific (patterned and quantity-limited input).
 a
-b
-inbox
-copyto 0
-inbox
-copyto 1
-sub 0
-jump if 0 to c
-jump to b
-c
-copyfrom 0
-outbox
-jump to a
+
+	inbox
+	copyto 	0
+	inbox
+	copyto 	1
+	sub 	0
+	jumpz	b
+	jump 	a
+b:
+	copyfrom 0
+	outbox
+	jump 	a

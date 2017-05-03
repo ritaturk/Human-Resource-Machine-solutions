@@ -1,12 +1,18 @@
-a
-inbox
-copyto 0
-inbox
-copyto 1
-sub 0
-outbox
-copyfrom 0
-copyto 2
-sub 1
-outbox
-jump to a
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 11-Sub-Hallway - SIZE 11/10 - SPEED 44/40 --
+
+-- The sub command is introduced and is used to subtract an item from memory
+-- from the item in hand.
+
+a:
+	inbox
+	copyto 		0
+	inbox
+	copyto 		1
+	sub 		0
+	outbox
+	copyfrom 	0
+	copyto 		2
+	sub 		1
+	outbox
+	jump		a

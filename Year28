@@ -1,76 +1,79 @@
-a
-inbox
-copy to 0
-inbox
-copy to 1
-inbox 
-copy to 2
-sub 0
-jump if 0 to b
-jump if negative to b
-copyfrom 0
-copyfrom 1
-sub 0
-jump if 0 to c
-jump if negative to c
-copyfrom 1
-copyfrom 2
-sub 1
-jump if 0 to d
-jump if negative to d
-copyfrom 0
-outbox
-copyfrom 1
-outbox
-copyfrom 2
-outbox
-jump to a
-b
-copyfrom 1
-sub 0
-jump if 0 to e
-jump if negative to e
-copyfrom 2
-outbox
-copyfrom 0
-outbox
-copyfrom 1
-outbox
-jump to a
-d
-copyfrom 0
-outbox
-copyfrom 2
-outbox
-copyfrom 1
-outbox
-jump to a
-c
-copyfrom 1
-outbox
-copyfrom 0
-outbox
-copyfrom 2
-outbox
-jump to a
-e
-copyfrom 2
-copyfrom 1
-sub 2
-jump if negative to f
-jump if 0 to f
-copyfrom 2
-outbox
-copyfrom 1
-outbox
-copyfrom 0
-outbox
-jump to a
-f
-copyfrom 1
-outbox
-copyfrom 2
-outbox
-copyfrom 0
-outbox
-jump to a
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 28-Three-Sort - SIZE 70/34 - SPEED 98/78 --
+
+a:
+	inbox
+	copy to 	0
+	inbox
+	copyto 		1
+	inbox 
+	copyto 		2
+	sub 		0
+	jumpz 		b
+	jumpn 		b
+	copyfrom 	0
+	copyfrom 	1
+	sub 		0
+	jumpz 		c
+	jumpn 		c
+	copyfrom 	1
+	copyfrom 	2
+	sub 		1
+	jumpz 		d
+	jumpn 		d
+	copyfrom 	0
+	outbox
+	copyfrom 	1
+	outbox
+	copyfrom 	2
+	outbox
+	jump 		a
+b:
+	copyfrom 	1
+	sub 		0
+	jumpz 		e
+	jumpn 		e
+	copyfrom 	2
+	outbox
+	copyfrom 	0
+	outbox
+	copyfrom 	1
+	outbox
+	jump 		a
+d:
+	copyfrom 	0
+	outbox
+	copyfrom 	2
+	outbox
+	copyfrom 	1
+	outbox
+	jump to 	a
+c:
+	copyfrom 	1
+	outbox
+	copyfrom 	0
+	outbox
+	copyfrom 	2
+	outbox
+	jump  		a
+e:
+	copyfrom 	2
+	copyfrom 	1
+	sub 		2
+	jumpn 		f
+	jumpz  		f
+	copyfrom 	2
+	outbox
+	copyfrom 	1
+	outbox
+	copyfrom 	0
+	outbox
+	jump  		a
+f:
+	copyfrom 	1
+	outbox
+	copyfrom 	2
+	outbox
+	copyfrom 	0
+	outbox
+	jump 		a

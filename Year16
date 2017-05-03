@@ -1,11 +1,14 @@
-a
-inbox
-jump if negative to b
-outbox
-jump to a
-b
-copyto 0
-sub 0
-sub 0
-outbox
-jump to a
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 16-Absolute-Positivity - SIZE 9/8 - SPEED 36/36 --
+
+a:
+	inbox
+	jumpn	b
+	outbox
+	jump 	a
+b:
+	copyto 	0
+	sub 	0
+	sub 	0
+	outbox
+	jump 	a

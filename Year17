@@ -1,22 +1,25 @@
-a
-inbox
-jump in negative to b
-inbox
-jump if negative to c
-copyfrom 4
-outbox
-jump to a
-b
-inbox
-jump if negative to d
-copyfrom 5
-outbox
-jump to a
-c
-copyfrom 5
-outbox
-jump to a
-d
-copyfrom 4
-outbox
-jump to a
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 17-Exclusive-Lounge - SIZE 18/12 - SPEED 28/28 --
+
+a:
+	inbox
+	jumpn	 b
+	inbox
+	jumpn	 c
+	copyfrom 4
+	outbox
+	jump 	 a
+b:
+	inbox
+	jumpn	 d
+	copyfrom 5
+	outbox
+	jump 	 a
+c:
+	copyfrom 5
+	outbox
+	jump 	 a
+d:
+	copyfrom 4
+	outbox
+	jump 	 a

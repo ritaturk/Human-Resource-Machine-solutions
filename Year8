@@ -1,7 +1,11 @@
-a
-inbox
-copyto 0
-add 0
-add 0
-outbox
-jump to a
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- 08-Tripler-Room - SIZE 6/6 - SPEED 24/24 --
+
+-- Triple each inbox item by copying to memory and adding it to itself twice.
+a:
+	inbox
+	copyto	0
+	add		0
+	add 	0
+	outbox
+	jump 	a
